@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Include English language -->
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Todo list</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+    <h1 class="text-center">to-do list</h1>
+</header>
+
+
+<div class="row m-0">
+    <div class="col-lg-6 offset-lg-3">
+<div class="jumbotron">
+<form>
+        <div class="form-group">
+          <label for="inputTask">Task</label>
+          <input type="text" class="form-control" id="inputTask" placeholder="Enter information about your task" name="task">
+        </div>
+        <div class="form-group">
+          <label for="dateInput">Date and time</label>
+          <input type='text' class='datepicker-here form-control' data-timepicker="true" data-language='en' placeholder="Click to pick date and time" name="date">
+        </div>
+        <button onclick="return sendTask(this.form)" class="btn btn-primary">Add</button>
+</form>
+</div>
+
+<table class="table table-striped table-hover" id="taskTable">
+        <thead>
+          <tr>
+            
+            <th style="width: 65%" scope="col">Task</th>
+            <th style="width: 35%" scope="col">Date</th>
+            <th style="width: 10%" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+</div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/i18n/datepicker.en.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
